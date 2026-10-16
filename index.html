@@ -1,52 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Isaac Koskei Kimutai Foundation promotes peace, education, health and inclusive community development in Kuresoi North, Kenya.">
-<meta name="theme-color" content="#176b45">
-<title>Isaac Koskei Kimutai Foundation | Peace for Development</title>
-<link rel="canonical" href="https://isaackoskeikimutai.org/">
-<style>
-:root{--green:#176b45;--deep:#123b2b;--red:#b83232;--gold:#e8b64b;--cream:#f7f5ef;--ink:#1e2924;--muted:#66736c;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
-a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;background:rgba(255,255,255,.97);z-index:10;border-bottom:1px solid #e8ece8}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:15px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;color:var(--deep);line-height:1.2}.logo{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-weight:900;border:3px solid var(--gold);letter-spacing:-1px}.brand small{display:block;color:var(--muted);font-size:.72rem;font-weight:600;margin-top:4px}.navlinks{display:flex;align-items:center;gap:22px}.navlinks a{text-decoration:none;font-size:.92rem;font-weight:700}.navlinks a:hover{color:var(--green)}.navlinks .donate{background:var(--red);color:#fff;padding:10px 16px;border-radius:7px}
-.hero{background:linear-gradient(110deg,rgba(13,52,36,.95),rgba(23,107,69,.86)),radial-gradient(circle at 80% 20%,#6d9a6c,#173e2c);color:#fff;padding:92px 0 86px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(255,255,255,.14);border-radius:50%;right:-110px;top:-150px;box-shadow:0 0 0 45px rgba(255,255,255,.035),0 0 0 90px rgba(255,255,255,.025)}.hero-content{max-width:760px;position:relative;z-index:1}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800;color:var(--gold)}h1{font-size:clamp(2.5rem,5.7vw,4.8rem);line-height:1.06;margin:16px 0 22px;letter-spacing:-1.8px}.hero p{font-size:1.18rem;max-width:680px;color:#e7f0e9}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-block;text-decoration:none;padding:13px 19px;border-radius:7px;font-weight:800}.btn-primary{background:var(--gold);color:#213a2c}.btn-outline{border:1px solid rgba(255,255,255,.65);color:#fff}.impact-strip{background:var(--cream);padding:24px 0}.impact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.impact div{padding:10px 16px;border-left:3px solid var(--gold)}.impact strong{display:block;color:var(--green);font-size:1.1rem}.impact span{font-size:.92rem;color:var(--muted)}
-section{padding:76px 0}.section-head{max-width:720px;margin-bottom:34px}.kicker{color:var(--red);text-transform:uppercase;letter-spacing:1.6px;font-size:.76rem;font-weight:800}.section-head h2{font-size:clamp(1.9rem,3.5vw,3rem);line-height:1.15;color:var(--deep);margin:9px 0 14px;letter-spacing:-.7px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.quote-panel{background:var(--cream);border-radius:14px;padding:32px;border-top:5px solid var(--green)}.quote-panel blockquote{font-size:1.35rem;font-weight:700;color:var(--deep);margin:0 0 15px;line-height:1.45}.quote-panel p{color:var(--muted);margin-bottom:0}.values{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.pill{padding:7px 11px;border-radius:999px;background:#e9f2eb;color:var(--deep);font-size:.83rem;font-weight:700}
-.programs{background:#f8faf8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e7ece8;border-radius:12px;padding:25px;box-shadow:0 8px 24px rgba(21,53,36,.04)}.card .num{width:43px;height:43px;border-radius:10px;background:#e8f2eb;color:var(--green);display:grid;place-items:center;font-weight:900;font-size:1.1rem}.card h3{color:var(--deep);margin:17px 0 8px;font-size:1.2rem}.card p{margin:0;color:var(--muted);font-size:.96rem}.card ul{padding-left:19px;color:var(--muted);font-size:.92rem;margin-bottom:0}
-.approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.approach{padding:18px 0;border-top:3px solid var(--gold)}.approach h3{font-size:1rem;color:var(--deep);margin:8px 0}.approach p{font-size:.92rem;color:var(--muted);margin:0}
-.get-involved{background:var(--deep);color:#fff}.get-involved .section-head h2{color:#fff}.get-involved .section-head p{color:#d4e1d8}.involve-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.involve-list{display:grid;gap:14px}.involve-item{padding:16px 18px;border:1px solid rgba(255,255,255,.2);border-radius:9px}.involve-item strong{display:block;color:var(--gold)}.involve-item span{color:#d4e1d8;font-size:.94rem}.contact-card{background:#fff;color:var(--ink);border-radius:12px;padding:26px}.contact-card h3{color:var(--deep);margin-top:0}.contact-card p{color:var(--muted);font-size:.94rem}.contact-card a{color:var(--green);font-weight:700}.notice{font-size:.82rem!important;background:#fff6dd;padding:10px 12px;border-radius:6px;color:#6c5418!important}
-footer{background:#0c2a1d;color:#d7e4dc;padding:30px 0}.footer-row{display:flex;justify-content:space-between;gap:22px;align-items:center;flex-wrap:wrap}.footer-row strong{color:#fff}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{font-size:.88rem;text-decoration:none;color:#d7e4dc}.copyright{font-size:.82rem;color:#a9beb1;margin-top:18px;border-top:1px solid rgba(255,255,255,.15);padding-top:16px}
-@media(max-width:800px){.nav{align-items:flex-start}.navlinks{gap:10px;flex-wrap:wrap;justify-content:flex-end}.navlinks a{font-size:.82rem}.about-grid,.involve-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.approach-grid{grid-template-columns:repeat(2,1fr)}.hero{padding:70px 0}.impact{grid-template-columns:1fr}}
-@media(max-width:540px){.nav{display:block}.brand{margin-bottom:14px}.navlinks{justify-content:flex-start}.cards{grid-template-columns:1fr}section{padding:55px 0}.hero p{font-size:1.05rem}.approach-grid{grid-template-columns:1fr 1fr}}
-</style>
-</head>
-<body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#home" aria-label="Isaac Koskei Kimutai Foundation home">
-      <span class="logo">IKK</span><span>Isaac Koskei Kimutai Foundation<small>Peace for Development</small></span>
-    </a>
-    <nav class="navlinks" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#programs">Our Work</a><a href="#values">Our Values</a><a href="#contact" class="donate">Get Involved</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <section class="hero" id="home">
-    <div class="wrap hero-content">
-      <div class="eyebrow">Kuresoi North · Nakuru County · Kenya</div>
-      <h1>Peace builds the future we all deserve.</h1>
-      <p>The Isaac Koskei Kimutai Foundation works with communities to expand opportunity, strengthen peaceful coexistence, and improve access to education, healthcare, safety, and sustainable livelihoods.</p>
-      <div class="actions"><a class="btn btn-primary" href="#programs">Explore Our Programs</a><a class="btn btn-outline" href="#contact">Partner With Us</a></div>
-    </div>
-  </section>
-  <div class="impact-strip"><div class="wrap impact">
-    <div><strong>Peace & Social Cohesion</strong><span>Dialogue, mediation and community-led solutions</span></div>
-    <div><strong>Opportunity for Every Learner</strong><span>Scholarships, mentorship and skills development</span></div>
-    <div><strong>Healthier Communities</strong><span>Outreach, prevention and health awareness</span></div>
   </div></div>
   <section id="about">
     <div class="wrap about-grid">
@@ -80,7 +32,7 @@ footer{background:#0c2a1d;color:#d7e4dc;padding:30px 0}.footer-row{display:flex;
   </section>
   <section id="values">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">How we work</div><h2>Values that guide our service</h2><p>Our approach is grounded in dignity, community participation, responsible stewardship, and measurable results.</p></div>
+      <div class="section-head"><div class="kicker">How we work</div><h2>Values that guide our service</h2><p>Support our mission, create impact, and participate in our community reward draws.</p></div>
       <div class="approach-grid">
         <div class="approach"><h3>Peace & Reconciliation</h3><p>We choose dialogue, mediation, and cooperation over violence and division.</p></div>
         <div class="approach"><h3>Integrity</h3><p>We commit to transparent decisions and responsible use of resources.</p></div>
@@ -93,6 +45,38 @@ footer{background:#0c2a1d;color:#d7e4dc;padding:30px 0}.footer-row{display:flex;
       </div>
     </div>
   </section>
+
+  <!-- NEW DONATE & DRAW PARTICIPATION SECTION -->
+  <section id="donate" style="background: var(--light, #f9f9f9); padding: 60px 0;">
+    <div class="wrap">
+      <div class="section-head" style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
+        <div class="kicker">Support & Win</div>
+        <h2>How to Donate and Participate in the Draw</h2>
+        <p style="margin-top: 15px;">Your contribution directly fuels our community programs in Kuresoi North. By supporting our foundation, you also stand a chance to win through our transparent community reward draw process.</p>
+      </div>
+      
+      <div class="involve-grid" style="align-items: center;">
+        <div class="involve-list">
+          <div class="involve-item"><strong>1. Make Your Donation</strong><span>Contribute securely to support our education, health, and peacebuilding initiatives.</span></div>
+          <div class="involve-item"><strong>2. Enter the Draw Pool</strong><span>Your participation is automatically recorded and entered into our secure verification list.</span></div>
+          <div class="involve-item"><strong>3. Fair & Random Selection</strong><span>Winners are chosen through a verified, transparent random draw process managed safely offline.</span></div>
+        </div>
+
+        <!-- Video Clip Container -->
+        <div class="video-container" style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
+          <h3 style="margin-bottom: 15px; color: var(--deep);">Watch How It Works</h3>
+          <!-- Replace 'your-video-file.mp4' with the actual filename or video embed link of your clip -->
+          <video controls width="100%" style="border-radius: 6px;">
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p style="font-size: 0.9rem; color: var(--muted); margin-top: 10px;">Watch this short clip explaining our donation and draw process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OF DONATE SECTION -->
+
   <section class="get-involved" id="contact">
     <div class="wrap">
       <div class="section-head"><div class="kicker">Be part of the change</div><h2>Let’s build a stronger Kuresoi North together.</h2><p>Whether you are a resident, volunteer, professional, institution, or potential partner, your skills and collaboration can help turn community priorities into action.</p></div>
@@ -117,7 +101,7 @@ footer{background:#0c2a1d;color:#d7e4dc;padding:30px 0}.footer-row{display:flex;
 </main>
 <footer>
   <div class="wrap">
-    <div class="footer-row"><div><strong>Isaac Koskei Kimutai Foundation</strong><br><span>Peace for Development. Empowerment for Prosperity.</span></div><div class="footer-links"><a href="#about">About</a><a href="#programs">Programs</a><a href="#values">Values</a><a href="#contact">Contact</a></div></div>
+    <div class="footer-row"><div><strong>Isaac Koskei Kimutai Foundation</strong><br><span>Peace for Development. Empowerment for Prosperity.</span></div><div class="footer-links"><a href="#about">About</a><a href="#programs">Programs</a><a href="#donate">Donate</a><a href="#values">Values</a><a href="#contact">Contact</a></div></div>
     <div class="copyright">© <span id="year">2026</span> Isaac Koskei Kimutai Foundation. All rights reserved. <span style="display:block;margin-top:4px">Community-focused, inclusive, and committed to peaceful development.</span></div>
   </div>
 </footer>
