@@ -6,194 +6,295 @@
   <title>Isaac Koskei Kimutai Foundation</title>
   <style>
     :root {
-      --deep: #1b3b2b;      /* Rich Deep Forest Green */
-      --accent: #2e7d32;    /* Vibrant Green Accent */
+      --deep: #1b3b2b;
+      --accent: #2e7d32;
       --light: #f4f6f4;
       --text: #333333;
       --muted: #666666;
+      --card-bg: #ffffff;
+      --border: #e2e8e0;
     }
+    
     body {
-      font-family: Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--text);
       line-height: 1.6;
       margin: 0;
       padding: 0;
+      background-color: #ffffff;
     }
-    /* Top Header Navbar with Logo and Green Branding */
+
+    .wrap {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header & Navbar */
     header {
-      background: #fff;
-      border-bottom: 3px solid var(--accent);
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
     .header-wrap {
-      max-width: 1100px;
+      max-width: 1150px;
       margin: 0 auto;
-      padding: 15px 20px;
+      padding: 18px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
+      font-weight: 700;
+      font-size: 1.25rem;
       color: var(--deep);
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
     }
-    /* If you have a logo image, you can replace this or put an <img> inside */
     .logo span {
       color: var(--accent);
     }
     .nav-links a {
-      margin-left: 20px;
+      margin-left: 24px;
       text-decoration: none;
       color: var(--deep);
       font-weight: 600;
       font-size: 0.95rem;
-      transition: color 0.2s;
+      transition: color 0.2s ease;
     }
     .nav-links a:hover {
       color: var(--accent);
     }
-    .wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+
     section {
-      padding: 60px 0;
+      padding: 70px 0;
     }
+
+    /* Hero / About Grid */
     .about-grid, .involve-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: start;
     }
+
     .section-head {
       margin-bottom: 40px;
     }
-    /* Beautiful Green Headers & Kickers */
+
     .kicker {
       text-transform: uppercase;
       font-size: 0.85rem;
       letter-spacing: 1.5px;
       color: var(--accent);
       font-weight: 800;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
+
     h2 {
       font-size: 2.3rem;
       color: var(--deep);
       margin-top: 0;
+      line-height: 1.2;
       font-weight: 700;
-      border-left: 5px solid var(--accent);
-      padding-left: 15px;
     }
+
+    p {
+      color: #4a5568;
+      margin-bottom: 20px;
+    }
+
     .quote-panel {
       background: var(--light);
-      padding: 30px;
-      border-radius: 8px;
-      border-top: 4px solid var(--deep);
+      padding: 35px;
+      border-radius: 12px;
+      border-left: 5px solid var(--accent);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
     }
+
     blockquote {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-style: italic;
       color: var(--deep);
-      margin: 0 0 15px 0;
+      margin: 0 0 20px 0;
+      line-height: 1.5;
     }
-    .values {
-      margin-top: 20px;
-    }
+
     .pill {
       display: inline-block;
       background: #e2ede4;
       color: var(--deep);
-      padding: 5px 12px;
+      padding: 6px 14px;
       border-radius: 20px;
       font-size: 0.85rem;
       margin-right: 6px;
-      margin-bottom: 6px;
-      font-weight: 500;
+      margin-bottom: 8px;
+      font-weight: 600;
     }
+
+    /* Programs Grid Cards */
+    .programs {
+      background-color: var(--light);
+    }
+
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
     }
+
     .card {
-      background: var(--light);
-      padding: 25px;
-      border-radius: 8px;
-      border-top: 3px solid var(--accent);
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      transition: transform 0.2s ease;
     }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
     .card .num {
-      font-size: 1.5rem;
-      font-weight: bold;
+      font-size: 1.4rem;
+      font-weight: 800;
       color: var(--accent);
+      margin-bottom: 10px;
     }
+
+    .card h3 {
+      color: var(--deep);
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+
+    .card ul {
+      padding-left: 18px;
+      color: #555;
+      font-size: 0.95rem;
+      margin: 15px 0 0 0;
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    /* Approach / Values */
     .approach-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
+
     .approach {
       background: #fff;
-      border: 1px solid #e0e0e0;
-      padding: 20px;
-      border-radius: 6px;
-      border-top: 3px solid var(--deep);
+      border: 1px solid var(--border);
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
     }
+
+    .approach h3 {
+      color: var(--deep);
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    /* Donate & Draw Section */
+    .donate-section {
+      background: linear-gradient(135deg, #f4f6f4 0%, #e8f0ea 100%);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .video-container {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+      text-align: center;
+    }
+
     .involve-item {
-      margin-bottom: 20px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
     }
+
     .involve-item strong {
       display: block;
       color: var(--deep);
+      font-size: 1.05rem;
+      margin-bottom: 4px;
     }
+
+    /* Contact Card */
     .contact-card {
       background: var(--light);
-      padding: 30px;
-      border-radius: 8px;
-      border-top: 4px solid var(--accent);
+      padding: 35px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
     }
+
+    .contact-card h3 {
+      color: var(--deep);
+      margin-top: 0;
+    }
+
+    .contact-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Footer */
     footer {
       background: var(--deep);
-      color: #fff;
-      padding: 40px 0;
+      color: #ffffff;
+      padding: 50px 0 30px 0;
     }
+
     .footer-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
+
     .footer-links a {
-      color: #fff;
-      margin-left: 20px;
+      color: #ffffff;
+      margin-left: 25px;
       text-decoration: none;
+      font-size: 0.95rem;
+      opacity: 0.9;
     }
+
+    .footer-links a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
     .copyright {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 25px;
       font-size: 0.9rem;
-      color: #ccc;
+      color: #cbd5e1;
     }
   </style>
 </head>
 <body>
 
-<!-- TOP NAVIGATION HEADER BAR WITH LOGO -->
+<!-- TOP NAVIGATION HEADER BAR -->
 <header>
   <div class="header-wrap">
-    <a href="#" class="logo">
-      <!-- If you have an image logo file named 'logo.png', uncomment the line below: -->
-      <!-- <img src="logo.png" alt="Logo" style="height: 35px;"> -->
-      Isaac Koskei Kimutai <span>Foundation</span>
-    </a>
+    <a href="#" class="logo">Isaac Koskei Kimutai <span>Foundation</span></a>
     <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#programs">Programs</a>
@@ -205,6 +306,7 @@
 </header>
 
 <main>
+  <!-- ABOUT SECTION -->
   <section id="about">
     <div class="wrap about-grid">
       <div>
@@ -228,6 +330,7 @@
     </div>
   </section>
 
+  <!-- PROGRAMS SECTION -->
   <section class="programs" id="programs">
     <div class="wrap">
       <div class="section-head">
@@ -236,16 +339,71 @@
         <p>We aim to work alongside residents, community groups, professionals, public institutions, and development partners to respond to local needs.</p>
       </div>
       <div class="cards">
-        <article class="card"><div class="num">01</div><h3>Peace, Security & Conflict Resolution</h3><p>Promoting peaceful coexistence, early response to tensions, and community-led approaches to safety.</p><ul><li>Community dialogue and security forums</li><li>Mediation and reconciliation meetings</li><li>Peace education and conflict prevention</li></ul></article>
-        <article class="card"><div class="num">02</div><h3>Education & Scholarships</h3><p>Helping learners access education and make informed choices about their futures.</p><ul><li>Scholarships and education support</li><li>Mentorship and career guidance</li><li>School retention and learning support</li></ul></article>
-        <article class="card"><div class="num">03</div><h3>Health & Medical Outreach</h3><p>Supporting community access to health information, preventive services, and outreach.</p><ul><li>Medical camps with qualified providers</li><li>Health awareness and prevention</li><li>Referrals and support for vulnerable families</li></ul></article>
-        <article class="card"><div class="num">04</div><h3>Youth & Women Empowerment</h3><p>Building practical skills, confidence, leadership, and pathways to economic participation.</p><ul><li>Skills and entrepreneurship training</li><li>Leadership and life-skills development</li><li>Mentorship and group initiatives</li></ul></article>
-        <article class="card"><div class="num">05</div><h3>Support for Vulnerable Families</h3><p>Working to ensure that people facing hardship are treated with dignity and included in community life.</p><ul><li>Support for older persons and persons with disabilities</li><li>Assistance to vulnerable children and households</li><li>Community referrals and resource mobilization</li></ul></article>
-        <article class="card"><div class="num">06</div><h3>Livelihoods & Community Development</h3><p>Encouraging locally driven solutions that improve resilience and quality of life.</p><ul><li>Training and livelihood initiatives</li><li>Environmental awareness and action</li><li>Partnerships for community priorities</li></ul></article>
+        <article class="card">
+          <div class="num">01</div>
+          <h3>Peace, Security & Conflict Resolution</h3>
+          <p>Promoting peaceful coexistence, early response to tensions, and community-led approaches to safety.</p>
+          <ul>
+            <li>Community dialogue and security forums</li>
+            <li>Mediation and reconciliation meetings</li>
+            <li>Peace education and conflict prevention</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="num">02</div>
+          <h3>Education & Scholarships</h3>
+          <p>Helping learners access education and make informed choices about their futures.</p>
+          <ul>
+            <li>Scholarships and education support</li>
+            <li>Mentorship and career guidance</li>
+            <li>School retention and learning support</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="num">03</div>
+          <h3>Health & Medical Outreach</h3>
+          <p>Supporting community access to health information, preventive services, and outreach.</p>
+          <ul>
+            <li>Medical camps with qualified providers</li>
+            <li>Health awareness and prevention</li>
+            <li>Referrals and support for vulnerable families</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="num">04</div>
+          <h3>Youth & Women Empowerment</h3>
+          <p>Building practical skills, confidence, leadership, and pathways to economic participation.</p>
+          <ul>
+            <li>Skills and entrepreneurship training</li>
+            <li>Leadership and life-skills development</li>
+            <li>Mentorship and group initiatives</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="num">05</div>
+          <h3>Support for Vulnerable Families</h3>
+          <p>Working to ensure that people facing hardship are treated with dignity and included in community life.</p>
+          <ul>
+            <li>Support for older persons and persons with disabilities</li>
+            <li>Assistance to vulnerable children and households</li>
+            <li>Community referrals and resource mobilization</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="num">06</div>
+          <h3>Livelihoods & Community Development</h3>
+          <p>Encouraging locally driven solutions that improve resilience and quality of life.</p>
+          <ul>
+            <li>Training and livelihood initiatives</li>
+            <li>Environmental awareness and action</li>
+            <li>Partnerships for community priorities</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
+  <!-- VALUES SECTION -->
   <section id="values">
     <div class="wrap">
       <div class="section-head">
@@ -266,8 +424,8 @@
     </div>
   </section>
 
-  <!-- DONATE & DRAW PARTICIPATION SECTION WITH VIDEO -->
-  <section id="donate" style="background: var(--light, #f9f9f9);">
+  <!-- DONATE & DRAW PARTICIPATION SECTION -->
+  <section id="donate" class="donate-section">
     <div class="wrap">
       <div class="section-head" style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
         <div class="kicker">Support & Win</div>
@@ -276,17 +434,25 @@
       </div>
       
       <div class="involve-grid" style="align-items: center;">
-        <div class="involve-list">
-          <div class="involve-item"><strong>1. Make Your Donation</strong><span>Contribute securely to support our education, health, and peacebuilding initiatives.</span></div>
-          <div class="involve-item"><strong>2. Enter the Draw Pool</strong><span>Your participation is automatically recorded and entered into our secure verification list.</span></div>
-          <div class="involve-item"><strong>3. Fair & Random Selection</strong><span>Winners are chosen through a verified, transparent random draw process managed safely offline.</span></div>
+        <div>
+          <div class="involve-item">
+            <strong>1. Make Your Donation</strong>
+            <span>Contribute securely to support our education, health, and peacebuilding initiatives.</span>
+          </div>
+          <div class="involve-item">
+            <strong>2. Enter the Draw Pool</strong>
+            <span>Your participation is automatically recorded and entered into our secure verification list.</span>
+          </div>
+          <div class="involve-item">
+            <strong>3. Fair & Random Selection</strong>
+            <span>Winners are chosen through a verified, transparent random draw process managed safely offline.</span>
+          </div>
         </div>
 
         <!-- Video Clip Container -->
-        <div class="video-container" style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid var(--accent);">
-          <h3 style="margin-bottom: 15px; color: var(--deep);">Watch How It Works</h3>
-          <video controls width="100%" style="border-radius: 6px;">
-            <!-- REPLACE 'your-video-file.mp4' WITH YOUR ACTUAL UPLOADED VIDEO FILENAME -->
+        <div class="video-container">
+          <h3 style="margin-bottom: 15px; color: var(--deep); font-size: 1.25rem;">Watch How It Works</h3>
+          <video controls width="100%" style="border-radius: 8px; border: 1px solid var(--border);">
             <source src="your-video-file.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -296,6 +462,7 @@
     </div>
   </section>
 
+  <!-- CONTACT / GET INVOLVED SECTION -->
   <section class="get-involved" id="contact">
     <div class="wrap">
       <div class="section-head">
@@ -304,7 +471,7 @@
         <p>Whether you are a resident, volunteer, professional, institution, or potential partner, your skills and collaboration can help turn community priorities into action.</p>
       </div>
       <div class="involve-grid">
-        <div class="involve-list">
+        <div>
           <div class="involve-item"><strong>Volunteer your time or expertise</strong><span>Support training, mentorship, outreach, peace forums, or community mobilization.</span></div>
           <div class="involve-item"><strong>Partner with us</strong><span>Collaborate on education, health, peacebuilding, and livelihood programs.</span></div>
           <div class="involve-item"><strong>Support a community initiative</strong><span>Contribute resources or services to a clearly defined program with accountable follow-up.</span></div>
@@ -315,7 +482,7 @@
           <p><strong>Location:</strong> Kuresoi North, Nakuru County, Kenya</p>
           <p><strong>Email:</strong> <em>[Add official foundation email]</em></p>
           <p><strong>Phone:</strong> <a href="tel:+254715307002">0715 307 002</a></p>
-          <p class="notice">The Foundation is described as registered based on the information provided. Confirm the official registration name and ensure this contact number is approved for public use before publishing.</p>
+          <p style="font-size: 0.88rem; color: #666; margin-top: 15px;">The Foundation is described as registered based on the information provided. Confirm the official registration name and ensure this contact number is approved for public use before publishing.</p>
         </div>
       </div>
     </div>
@@ -325,8 +492,14 @@
 <footer>
   <div class="wrap">
     <div class="footer-row">
-      <div><strong>Isaac Koskei Kimutai Foundation</strong><br><span>Peace for Development. Empowerment for Prosperity.</span></div>
-      <div class="footer-links"><a href="#about">About</a><a href="#programs">Programs</a><a href="#donate">Donate & Draw</a><a href="#values">Values</a><a href="#contact">Contact</a></div>
+      <div><strong>Isaac Koskei Kimutai Foundation</strong><br><span style="font-size: 0.9rem; opacity: 0.8;">Peace for Development. Empowerment for Prosperity.</span></div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#donate">Donate & Draw</a>
+        <a href="#values">Values</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
     <div class="copyright">© <span id="year">2026</span> Isaac Koskei Kimutai Foundation. All rights reserved. <span style="display:block;margin-top:4px">Community-focused, inclusive, and committed to peaceful development.</span></div>
   </div>
