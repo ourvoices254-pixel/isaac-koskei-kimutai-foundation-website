@@ -1,10 +1,150 @@
 <!DOCTYPE html>
-  </div></div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Koskei Kimutai Foundation</title>
+  <style>
+    :root {
+      --deep: #1b3b2b;
+      --accent: #2e7d32;
+      --light: #f4f6f4;
+      --text: #333333;
+      --muted: #666666;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .about-grid, .involve-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .section-head {
+      margin-bottom: 40px;
+    }
+    .kicker {
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      color: var(--accent);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 2.2rem;
+      color: var(--deep);
+      margin-top: 0;
+    }
+    .quote-panel {
+      background: var(--light);
+      padding: 30px;
+      border-radius: 8px;
+    }
+    blockquote {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--deep);
+      margin: 0 0 15px 0;
+    }
+    .values {
+      margin-top: 20px;
+    }
+    .pill {
+      display: inline-block;
+      background: #e2ede4;
+      color: var(--deep);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--light);
+      padding: 25px;
+      border-radius: 8px;
+    }
+    .card .num {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .approach {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    .involve-item {
+      margin-bottom: 20px;
+    }
+    .involve-item strong {
+      display: block;
+      color: var(--deep);
+    }
+    .contact-card {
+      background: var(--light);
+      padding: 30px;
+      border-radius: 8px;
+    }
+    footer {
+      background: var(--deep);
+      color: #fff;
+      padding: 40px 0;
+    }
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .footer-links a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<main>
   <section id="about">
     <div class="wrap about-grid">
       <div>
-        <div class="section-head"><div class="kicker">Who we are</div><h2>Local action. Shared progress.</h2>
-        <p>The Isaac Koskei Kimutai Foundation is a community-focused initiative dedicated to helping the people of Kuresoi North build safer, healthier, better educated, and more resilient communities. We believe lasting development grows where people work together, resolve differences peacefully, and have fair access to opportunity.</p></div>
+        <div class="section-head">
+          <div class="kicker">Who we are</div>
+          <h2>Local action. Shared progress.</h2>
+          <p>The Isaac Koskei Kimutai Foundation is a community-focused initiative dedicated to helping the people of Kuresoi North build safer, healthier, better educated, and more resilient communities. We believe lasting development grows where people work together, resolve differences peacefully, and have fair access to opportunity.</p>
+        </div>
         <h3 style="color:var(--deep)">Our mission</h3>
         <p>To empower the people of Kuresoi North through peacebuilding, education, health interventions, community development, conflict resolution, leadership development, and strategic partnerships that promote social cohesion, security, and sustainable livelihoods for all.</p>
         <h3 style="color:var(--deep)">Our vision</h3>
@@ -13,13 +153,20 @@
       <div class="quote-panel">
         <blockquote>“Peace is not only the absence of conflict; it is the foundation on which communities learn, thrive, and prosper.”</blockquote>
         <p>We bring people together to identify local priorities, strengthen community capacity, and turn shared ideas into practical action.</p>
-        <div class="values"><span class="pill">Peace</span><span class="pill">Integrity</span><span class="pill">Inclusion</span><span class="pill">Accountability</span><span class="pill">Service</span><span class="pill">Partnership</span></div>
+        <div class="values">
+          <span class="pill">Peace</span><span class="pill">Integrity</span><span class="pill">Inclusion</span><span class="pill">Accountability</span><span class="pill">Service</span><span class="pill">Partnership</span>
+        </div>
       </div>
     </div>
   </section>
+
   <section class="programs" id="programs">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">Our areas of work</div><h2>Practical programs for community empowerment</h2><p>We aim to work alongside residents, community groups, professionals, public institutions, and development partners to respond to local needs.</p></div>
+      <div class="section-head">
+        <div class="kicker">Our areas of work</div>
+        <h2>Practical programs for community empowerment</h2>
+        <p>We aim to work alongside residents, community groups, professionals, public institutions, and development partners to respond to local needs.</p>
+      </div>
       <div class="cards">
         <article class="card"><div class="num">01</div><h3>Peace, Security & Conflict Resolution</h3><p>Promoting peaceful coexistence, early response to tensions, and community-led approaches to safety.</p><ul><li>Community dialogue and security forums</li><li>Mediation and reconciliation meetings</li><li>Peace education and conflict prevention</li></ul></article>
         <article class="card"><div class="num">02</div><h3>Education & Scholarships</h3><p>Helping learners access education and make informed choices about their futures.</p><ul><li>Scholarships and education support</li><li>Mentorship and career guidance</li><li>School retention and learning support</li></ul></article>
@@ -30,9 +177,14 @@
       </div>
     </div>
   </section>
+
   <section id="values">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">How we work</div><h2>Values that guide our service</h2><p>Support our mission, create impact, and participate in our community reward draws.</p></div>
+      <div class="section-head">
+        <div class="kicker">How we work</div>
+        <h2>Values that guide our service</h2>
+        <p>Support our mission, create impact, and participate in our community reward draws.</p>
+      </div>
       <div class="approach-grid">
         <div class="approach"><h3>Peace & Reconciliation</h3><p>We choose dialogue, mediation, and cooperation over violence and division.</p></div>
         <div class="approach"><h3>Integrity</h3><p>We commit to transparent decisions and responsible use of resources.</p></div>
@@ -46,8 +198,8 @@
     </div>
   </section>
 
-  <!-- NEW DONATE & DRAW PARTICIPATION SECTION -->
-  <section id="donate" style="background: var(--light, #f9f9f9); padding: 60px 0;">
+  <!-- DONATE & DRAW PARTICIPATION SECTION -->
+  <section id="donate" style="background: var(--light, #f9f9f9);">
     <div class="wrap">
       <div class="section-head" style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
         <div class="kicker">Support & Win</div>
@@ -65,7 +217,6 @@
         <!-- Video Clip Container -->
         <div class="video-container" style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
           <h3 style="margin-bottom: 15px; color: var(--deep);">Watch How It Works</h3>
-          <!-- Replace 'your-video-file.mp4' with the actual filename or video embed link of your clip -->
           <video controls width="100%" style="border-radius: 6px;">
             <source src="your-video-file.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -75,11 +226,14 @@
       </div>
     </div>
   </section>
-  <!-- END OF DONATE SECTION -->
 
   <section class="get-involved" id="contact">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">Be part of the change</div><h2>Let’s build a stronger Kuresoi North together.</h2><p>Whether you are a resident, volunteer, professional, institution, or potential partner, your skills and collaboration can help turn community priorities into action.</p></div>
+      <div class="section-head">
+        <div class="kicker">Be part of the change</div>
+        <h2>Let’s build a stronger Kuresoi North together.</h2>
+        <p>Whether you are a resident, volunteer, professional, institution, or potential partner, your skills and collaboration can help turn community priorities into action.</p>
+      </div>
       <div class="involve-grid">
         <div class="involve-list">
           <div class="involve-item"><strong>Volunteer your time or expertise</strong><span>Support training, mentorship, outreach, peace forums, or community mobilization.</span></div>
@@ -93,18 +247,22 @@
           <p><strong>Email:</strong> <em>[Add official foundation email]</em></p>
           <p><strong>Phone:</strong> <a href="tel:+254715307002">0715 307 002</a></p>
           <p class="notice">The Foundation is described as registered based on the information provided. Confirm the official registration name and ensure this contact number is approved for public use before publishing.</p>
-          <span style="color:var(--muted);font-size:.92rem">Email: to be added when the official foundation email is available.</span>
         </div>
       </div>
     </div>
   </section>
 </main>
+
 <footer>
   <div class="wrap">
-    <div class="footer-row"><div><strong>Isaac Koskei Kimutai Foundation</strong><br><span>Peace for Development. Empowerment for Prosperity.</span></div><div class="footer-links"><a href="#about">About</a><a href="#programs">Programs</a><a href="#donate">Donate</a><a href="#values">Values</a><a href="#contact">Contact</a></div></div>
+    <div class="footer-row">
+      <div><strong>Isaac Koskei Kimutai Foundation</strong><br><span>Peace for Development. Empowerment for Prosperity.</span></div>
+      <div class="footer-links"><a href="#about">About</a><a href="#programs">Programs</a><a href="#donate">Donate</a><a href="#values">Values</a><a href="#contact">Contact</a></div>
+    </div>
     <div class="copyright">© <span id="year">2026</span> Isaac Koskei Kimutai Foundation. All rights reserved. <span style="display:block;margin-top:4px">Community-focused, inclusive, and committed to peaceful development.</span></div>
   </div>
 </footer>
+
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
